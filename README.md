@@ -5,7 +5,7 @@ Spring data jpa with soft delete, page and inheritance.type=joined
 Hello everyone,
 
 Page does not load if used InheritanceType as JOINED table in Spring Data JPA.
-Here is a simple example on my github (http://localhost:8080/my-rest/listA) for the issue
+Here is a simple example (http://localhost:8080/my-rest/listA) for the issue
 https://stackoverflow.com/questions/62826016/spring-data-jpa-page-does-not-work-when-the-entity-has-a-soft-delete-and-is-in
 
 Exception:
