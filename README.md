@@ -1,4 +1,4 @@
-# springdata
+# springdatajpa
 Spring data jpa with soft delete, page and inheritance.type=joined
 
 
