@@ -14,7 +14,13 @@ Exception:
 2020-07-14 16:19:32.383  WARN 26264 --- [nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42122, SQLState: 42S22
 2020-07-14 16:19:32.383 ERROR 26264 --- [nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column "INHERITEDC0_1_.DELETED" not found; SQL statement:
 select count(inheritedc0_.id) as col_0_0_ from inherited_classa inheritedc0_ where ( inheritedc0_1_.DELETED = 0) [42122-199]
-2020-07-14 16:19:32.398 ERROR 26264 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select count(inheritedc0_.id) as col_0_0_ from inherited_classa inheritedc0_ where ( inheritedc0_1_.DELETED = 0)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement] with root cause
+2020-07-14 16:19:32.398 ERROR 26264 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [
+
+select count(inheritedc0_.id) as col_0_0_ 
+from inherited_classa inheritedc0_ 
+where ( inheritedc0_1_.DELETED = 0)
+
+]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement] with root cause
 
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "INHERITEDC0_1_.DELETED" not found; SQL statement:
 select count(inheritedc0_.id) as col_0_0_ from inherited_classa inheritedc0_ where ( inheritedc0_1_.DELETED = 0) [42122-199]
